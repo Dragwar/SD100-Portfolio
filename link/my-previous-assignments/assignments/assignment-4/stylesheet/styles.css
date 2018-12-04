@@ -1,0 +1,77 @@
+/* add your CSS here */
+
+.whole-card {
+    background-color: #dadfed;
+    border: 1px solid gray;
+    margin: auto;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 5px 5px 2px 0px rgba(222,222,222,0.75);
+    border-radius: 10px;
+    animation-name: ani-test;
+    animation-duration: 6s;
+    animation-delay: 6.5s;
+}
+
+@keyframes ani-test {
+    0%   {background-color: #dadfed;}
+    25%  {background-color: red;}
+    50%  {background-color: green;}
+    75%  {background-color: blue}
+    100% {background-color: #dadfed;}
+}
+
+h3 {
+    margin-top: unset;
+    font-family: 'Merriweather', serif;
+    border-left: 5px solid lightblue;
+    background-color: #f3faff;
+    border-radius: 0px 5px 5px 0px;
+    animation-name: header3;
+    animation-duration: 6s;
+    animation-delay: 0.5s;
+    position: relative;
+}
+
+@keyframes header3 {
+    0%   {background-color: lightblue; top: 0px;}
+    25%  {background-color: red; top: 310px;}
+    50%  {background-color: green; top: 630px;}
+    75%  {background-color: blue; top: 310px;}
+    100% {background-color: lightblue; top: 0px;}
+}
+
+img {
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.text-content {
+    background-color: #f3faff;
+    border: 1px solid gray;
+    margin: auto;
+    padding: 8px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.info-fact {
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+}
+
+.description {
+    font-family: 'Lato', sans-serif;
+}
+
+.text-content ul {
+    padding-left: unset;
+    font-size: 90%;
+    font-family: 'Rubik', sans-serif;
+    list-style-type: none;
+}
+
+.text-content ul li span {
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}

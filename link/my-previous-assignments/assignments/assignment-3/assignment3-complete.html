@@ -1,0 +1,126 @@
+<!--
+
+        The webpage must:
+d    1. Have an input class="text-box" field for the users name
+d    2. Have an input class="text-box" field for the users email address
+d    3. Have an input class="text-box" field for the users password
+d    4. Have an input class="text-box" field for the users password confirmation
+d    5. All these fields are required
+d    6. These fields should be wrapped in a form tag
+d    7. You should include a submit button
+d    8. The submit button should also be in the form tag
+d    9. The form should not submit unless all the fields are filled out
+    10. A checkbox input class="text-box" that users must check to agree to the terms and conditions.
+d    11. A link in the label field on the checkbox that links to another page that you create that contains the "terms and conditions". The terms and conditions page can actually be an empty HTML page, but simply linking 2 pages together is the challenge.
+
+d    12. Labels for all the input class="text-box" fields
+d    13. Placeholders in all the input class="text-box" fields
+d    14. There should be an large image centred on the page
+d    15. There should be a header with a 'fake' website name inside that spans the top of the page.
+
+        Nice to haves:
+d    a) An icon on the submit button
+d    b) A footer that fixed to the bottom of the page
+d    c) Centred inputsclass="text-box"  and submit buttons
+d    d) The link to the terms and conditions page should open up in a new browser tab, not in the current browser tab.
+d    e) The button has a hover state that causes it to change color when the user hovers their mouse over it.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Surveys R Us</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet/form-style.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+        <style>
+        </style>
+    </head>
+    <body>
+
+        <p class="header-link">The Best Surveys At Surveys R Us.com</p>
+
+        <h1>Submit Your Info Below</h1>
+
+        <div>
+            <img src="images/g-logo.png" alt="Google's Logo">
+        </div>
+
+
+        <form id="whole-form" action="submited-form/submited-form.html">
+
+            <div class="client-info">
+                <!-- <div>
+                    <span>First Name:</span>
+                    <input class="text-box box1" type="text" name="firstname" placeholder="First Name...">
+                </div>
+
+                <div>
+                    <span>Last Name:</span>
+                    <input class="text-box" type="text" name="lastname" placeholder="Last Name...">
+                </div> -->
+
+                <div>
+                    <label for="i-username">Username:</label>
+                    <input class="text-box" type="text" id="i-username" name="username" placeholder="Username..." required>
+                </div>
+
+                <div>
+                    <label for="i-password">Password:</label>
+                    <input class="text-box" type="password" id="i-password" name="password" placeholder="Password..." minlength="8" maxlength="16" required>
+                </div>
+
+                <div>
+                    <label for="c-password">Confirm Password:</label>
+                    <input class="text-box" type="password" id="c-password" name="confirm-password" placeholder="Confirm Password..." minlength="8" maxlength="16" required>
+                </div>
+
+                <div>
+                    <label for="email-input-box">Email:</label>
+                    <input class="text-box" id="email-input-box" type="email" name="emailaddress" placeholder="someone@myemail.com" required>
+                </div>
+
+                <!-- <div>
+                    <span>Country:</span>
+                    <select id="country" name="country">
+                        <option value="select-country">Please Select Country</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div> -->
+            </div>
+
+            <fieldset>
+                <legend>Terms and Services</legend>
+                <div class="radio-buttons">
+                    <a href="terms-service/terms.html" target="_blank">Please Read Our Terms and Services</a>
+                    <h4>Do You Agree To Our Terms and Services?</h4>
+                    <input type="radio" name="y-n-radio" value="yes" id="yes-radio" required>
+                    <label for="yes-radio">Yes</label>
+                    <!-- <input type="radio" name="y-n-radio" value="no" id="no-radio">
+                    <label for="no-radio">No</label> -->
+                </div>
+            </fieldset>
+
+            <div id="submit-b">
+                <!--old code to the right <input type="submit" value="Submit Form"> -->
+                <button class="submit-button" style="border-radius: 10px">Submit Form <i class="far fa-check-square"></i></button>
+            </div>
+
+        </form>
+
+        <footer class="whole-footer">
+            <div class="footer">
+                <button>Home</button>
+                <button>About</button>
+                <button>Contact</button>
+            </div>
+        </footer>
+
+    </body>
+</html>

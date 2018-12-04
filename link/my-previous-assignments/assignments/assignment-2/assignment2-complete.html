@@ -1,0 +1,118 @@
+<html>
+
+<head>
+  <style>
+    /*(DONE) Step 1*/
+    #list-friends li.mutant  {
+      color:blue;
+    }
+    /*(DONE) Step 2*/
+    div span {
+      color:green;
+    }
+    /*(DONE) Step 3*/
+    div > p {
+      color:red;
+    }
+    /*(DONE) Step 4*/
+    h1, p {
+      color:lime;
+    }
+    /*(DONE) Step 5*/
+    p b {
+      color:pink;
+    }
+    /*(DONE) Step 6*/
+    li[class="mutant not-favorite"] {
+      color:orangered;
+    }
+    /*(DONE) Step 7*/
+    p b span:last-child {
+      color:gray;
+    }
+
+/*  More SOLUTIONs
+
+      ul.my-lists .mutant {
+      border: 1px solid red;
+    }
+
+    #list-friends .mutant {
+      border: 1px solid red;
+    }
+
+    p + span {
+      border: 1px solid blue;
+    }
+
+    div p {
+      border: 1px solid green;
+    }
+
+    p, h1 {
+      border: 1px solid purple;
+    }
+
+    h3 + p {
+      border: 1px solid black;
+    }
+
+    ol .not-favorite {
+      border: 1px solid brown;
+    }
+
+    span + span {
+      border: 1px solid pink;
+    }
+
+*/
+
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to my Avenger Website.</h1>
+
+  <div class="intro">
+    <p class="name">My name is Iron Man</p>
+
+    <p>I live in Malibu.</p>
+
+    <p>I have many friends:</p>
+    
+    <span><b>Thanos is not one of them</b></span>
+
+  </div>
+
+  <ul id="list-friends" class="my-lists">
+    <li class="mutant">Thor</li>
+    <li class="mutant ">Spiderman</li>
+    <li class="mutant">The Hulk</li>
+    <li class="human">War-Machine</li>
+  </ul>
+
+  <p>If I had to order my friends, it would look like this</p>
+
+  <ol id="order-friends" class="my-lists">
+    <li class="human favorite">War-Machine</li>
+    <li class="mutant favorite">Spiderman</li>
+    <li class="mutant not-favorite">The Hulk</li>
+    <li class="mutant not-favorite">Thor</li>
+  </ol>
+
+  <p>But these are really the only two I like:</p>
+
+  <ul>
+    <li class="human favorite">War-Machine</li>
+    <li class="mutant favorite">Spiderman</li>
+  </ul>
+  
+  <p>All my friends are great!<br> But I really like Pepper!!</p>
+
+  <h3>We are all superheroes!</h3>
+  
+  <p><b><span>My latest discoveries</span><span>have led me to believe that we are all animals.</span></b></p>
+
+</body>
+
+</html>

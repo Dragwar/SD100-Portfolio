@@ -1,0 +1,60 @@
+<!-- 
+		Evaluation Criteria
+d	1. The text is italicized for the animal’s interesting fact.
+d	2. The labels are bolded for the animal’s list items.
+d	3. The dots are removed from the animal's list items.
+d	4. Uses border around animal’s name, image, and information (interesting fact, list items, and description).
+d	5. Uses border around animal’s information.
+d	6. Uses spacing between animal’s name, image, and information.
+d	7. Card width should be fixed and include the spacing around the image (Since image is 300px wide, card should be 	300px + spacing on either side. Card should not expand with the browser window).
+d	8. Feel free to customize your information and styles so long as you follow the above rules. For inspiration, you can try playing around with background colors or border radius!
+d	9. The placeholder image and information is replaced with favorite animal image and information.
+d	10. The image is 300px wide or the image's width is set to 300px.
+d	11. The image’s alt is relevant to the animal used.
+d	12. HTML includes classes that are used for styling and classes are given meaningful names.
+d	13. The CSS stylesheet is linked to the HTML. The HTML code does not include <style> elements or style attributes 	inline. 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animal Trading Cards</title>
+	<link rel="stylesheet" href="stylesheet/styles.css">
+	<!-- Fonts Below -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+</head>
+<body>
+	<div class="whole-card">
+		<!-- your favorite animal's name goes here -->
+		<h3>Polar bear</h3>
+		<!-- your favorite animal's image goes here -->
+		<img src="images/polar-bear.jpg" alt="Polar Bear">
+		<div class="text-content">
+			<!-- your favorite animal's interesting fact goes here -->
+			<p class="info-fact">
+				Although most polar bears are born on land, they spend most of their time on the sea ice.
+			</p>
+			<ul>
+				<!-- your favorite animal's list items go here -->
+				<li><span>Binomial name</span>: Ursus maritimus</li>
+				<li><span>Average Lifespan</span>: 25 years</li>
+				<li><span>Average Mass</span>: Male 450 kg, Female 200 kg</li>
+				<li><span>Conservation status</span>: Vulnerable</li>
+			</ul>
+			<!-- your favorite animal's description goes here -->
+			<p class="description">
+				The polar bear is a hypercarnivorous bear whose native range lies largely within the Arctic Circle, encompassing the Arctic Ocean, its surrounding seas and surrounding land masses.
+			</p>
+		</div>
+	</div>
+</body>
+</html>
+
+<!--
+	Refer to site for info:
+	"https://en.wikipedia.org/wiki/Polar_bear"
+-->
