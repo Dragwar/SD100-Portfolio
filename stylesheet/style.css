@@ -111,17 +111,15 @@ h3 {
 }
 
         /*Footer*/
-
 footer {
-    display: flex;
-    justify-content: space-evenly;
+    display: flex; 
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding-top: 25px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 15px;
     background-color: #24292e;
     font-family: 'Merriweather', serif;
     color: white;
@@ -129,11 +127,13 @@ footer {
     list-style: unset;
 }
 
-footer > div.icon-link > div > a > svg {
-    fill: rgba(255, 255, 255, 0.438);
+footer > div > a > svg.octicon {
+    width: 50px;
+    height: 50px;
+    fill: rgba(255, 255, 255, 0.589);
 }
 
-footer > div.icon-link > div > a > svg:hover {
+footer > div > a > svg.octicon:hover {
     fill: white;
 }
 
