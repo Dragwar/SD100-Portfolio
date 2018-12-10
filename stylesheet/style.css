@@ -12,6 +12,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-size: 25px;
+    overflow-x: hidden;
 }
 
     /*Centers Main Container*/
@@ -109,16 +110,32 @@ h3 {
     font-family: 'Merriweather', serif;
 }
 
-/* footer {
-    width: 95%;
+        /*Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 5px;
-    background-color: #8181889e;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 25px;
+    background-color: #24292e;
     font-family: 'Merriweather', serif;
-    color: #939399;
-    font-size: small;
-} */
+    color: white;
+    text-decoration: unset;
+    list-style: unset;
+}
+
+footer > div.icon-link > div > a > svg {
+    fill: rgba(255, 255, 255, 0.438);
+}
+
+footer > div.icon-link > div > a > svg:hover {
+    fill: white;
+}
 
         /*Breakpoints*/
 
