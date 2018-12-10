@@ -112,7 +112,7 @@ h3 {
 
         /*Footer*/
 
-footer {
+footer div {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
